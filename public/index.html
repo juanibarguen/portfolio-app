@@ -104,7 +104,8 @@
   <style>
     .projects-carrousel {
   display: flex;
-  width: 900px; /* Define el ancho del contenedor */
+  max-width: 900px;
+  width: 100%; /* Define el ancho del contenedor */
   overflow-x: scroll; /* Agrega el scroll horizontal */
   padding: 20px; /* Padding vertical para separar el scroll del contenedor */
   box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
@@ -134,7 +135,6 @@
   margin-right: 16px; /* Espaciado entre tarjetas */
   background: #fff; /* Fondo blanco para las tarjetas */
   border: 1px solid #ddd; /* Borde gris claro para las tarjetas */
-  border-radius: 8px; /* Bordes redondeados para las tarjetas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para las tarjetas */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos de hover */
 }
@@ -147,8 +147,6 @@
 .card-img {
   height: 150px; /* Altura fija para la imagen */
   background-color: #8a8a8a; /* Color de fondo para la imagen */
-  border-top-left-radius: 8px; /* Bordes redondeados para la parte superior de la imagen */
-  border-top-right-radius: 8px; /* Bordes redondeados para la parte superior de la imagen */
 }
 
 .card-text {
